@@ -1,0 +1,78 @@
+.home {
+  section {
+    padding: 20px 10px 10px;
+    border-radius: 6px;
+    /*margin-bottom: 20px;*/
+    border-bottom: 1px dotted white;
+    .subject {
+      padding-bottom: 20px;
+      font-size: 1.15em;
+    }
+    .option {
+      display: none;
+    }
+    .details {
+      position: relative;
+      .option-toggle {
+        width: 10px;
+        height: 10px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        /*background: green;*/
+        cursor: pointer;
+        span,
+        span:after,
+        span:before {
+          content: "";
+          display: block;
+          height: 4px;
+          border-radius: 50%;
+          width: 4px;
+          background: #000;
+          position: relative;
+        }
+        span:before {
+          top: 8px;
+        }
+        span:after {
+          bottom: 12px;
+        }
+      }
+      .option {
+        background: #E0E0E0;
+        width: 150px;
+        font-size: 1em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-shadow: -1px 1px 10px #999;
+        ul > li {
+          height: 30px;
+          width: 100%;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          &:hover {
+            background: #fff;
+            cursor: pointer;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .option {
+    width: 50%;
+  }
+}

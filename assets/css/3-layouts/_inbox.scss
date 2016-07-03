@@ -1,0 +1,27 @@
+.inbox-container {
+  section.search-box {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input {
+          height: 25px;
+      }
+  }
+  .list-items-container {
+      background: #E0E0E0;
+  }
+
+  div.list-items {
+      /*background: #E0E0E0;*/
+      padding: 10px;
+      padding-top: 20px;
+      border-radius: 6px;
+      /*margin-bottom: 20px;*/
+      border-bottom: 1px dotted white;
+      /*width: 60%; */
+      /* Decide max width for list-items later for Desktop*/
+      display: flex;
+      justify-content: space-between;
+  }
+}
