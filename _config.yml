@@ -1,2 +1,5 @@
 name: Notifier
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+sass:
+    sass_dir: /assets/css/
