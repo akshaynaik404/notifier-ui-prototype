@@ -1,9 +1,7 @@
 .inbox-container {
   section.search-box {
       height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center-center;
       input {
           height: 25px;
       }
