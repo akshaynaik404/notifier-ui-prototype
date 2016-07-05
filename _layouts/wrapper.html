@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
@@ -6,36 +8,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <div class="logo"><a href="/screens/home.html">N</a></div>
+      <div class="logo"><a href="{{ site.baseurl }}/screens/home.html">N</a></div>
       <div class="page-title"> {{ page.title }}</div>
       <div class="navbar-toggle"><span></span></div>
     </header>
     <nav>
       <ul>
         <li class="active">
-          <div><a href="/screens/compose.html">Compose</a></div>
+          <div><a href="{{ site.baseurl }}/screens/compose.html">Compose</a></div>
         </li>
         <li>
-          <div><a href="/screens/inbox.html">Inbox</a></div>
+          <div><a href="{{ site.baseurl }}/screens/inbox.html">Inbox</a></div>
         </li>
         <li>
-          <div><a href="/screens/outbox.html">Outbox</a></div>
+          <div><a href="{{ site.baseurl }}/screens/outbox.html">Outbox</a></div>
         </li>
         <li>
-          <div><a href="/screens/profile.html">Profile</a></div>
+          <div><a href="{{ site.baseurl }}/screens/profile.html">Profile</a></div>
         </li>
         <li>
-          <div><a href="/screens/settings.html">Settings</a></div>
+          <div><a href="{{ site.baseurl }}/screens/settings.html">Settings</a></div>
         </li>
         <li>
-          <div><a href="/screens/logout/logout.html">logout</a></div>
+          <div><a href="{{ site.baseurl }}/screens/logout/logout.html">logout</a></div>
         </li>
       </ul>
     </nav>
@@ -44,7 +46,7 @@
 
 
   </div>
-  <script src="/assets/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
   <script>
     var optionToggleClicked = false;
     var bodyClicked = 0;
