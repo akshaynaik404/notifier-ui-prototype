@@ -1,0 +1,43 @@
+---
+layout: wrapper
+title: compose
+---
+<!-- Dekh bhai emoji while notification is being sent -->
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/assets/js/filter.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/assets/js/basic.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/assets/js/friends.js" type="text/javascript"></script>
+
+
+<form action="compose.html">
+  <main class="compose">
+    <div class="compose-box">
+      <textarea onkeyup="auto_grow(this)" class="subject" placeholder="Subject"></textarea>
+      <textarea onkeyup="auto_grow(this)" class="message" placeholder="Message"></textarea>
+      <input type="file" class="attachment" multiple="">
+    </div>
+    <div class="recipients-container">
+      <input placeholder="Recipients" id="search_box" type="text"></input>
+      <div class="recipients">
+      </div>
+      <input type="submit" name="submit" id="submit" value="Send">
+    </div>
+  </main>
+</form>
+<script id="template" type="text/html">
+  <div>
+    <label>
+      <input type="checkbox" value="">
+      <%= title %>
+    </label>
+  </div>
+</script>
+<script type="text/javascript">
+  function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight) + "px";
+  }
+  $('.recipients > div').click(function() {
+    console.log('recipient clicked');
+  });
+</script>

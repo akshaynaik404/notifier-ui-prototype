@@ -1,0 +1,61 @@
+.compose {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .compose-box {
+    box-shadow: 0 0 20px #999;
+    .message,
+    .subject {
+      display: block;
+      resize: none;
+      overflow: hidden;
+      min-width: 500px;
+      border: 0;
+      &:focus {
+        box-shadow:  0px 0px 3px #1980AF;
+        outline: 0;
+      }
+    }
+    .subject {
+      min-height: 50px;
+      border-bottom: 1px solid #DED6D6;
+    }
+    .message {
+      min-height: 300px;
+    }
+  }
+  .recipients-container {
+    background: #fff;
+    box-shadow: 0 0 20px #999;
+    width: 200px;
+    // position: relative;
+    #search_box {
+      display: block;
+      width: 100%;
+      // border: 0;
+      &:focus {
+        outline: 0;
+      }
+    }
+    input#submit {
+      width: 100%;
+      display: inline-block;
+    }
+    .recipients {
+      overflow-y: scroll;
+      max-height: 322px;
+      div > label {
+        font-weight: normal;
+      }
+      .fjs_item {
+        label {
+          cursor: pointer;
+          // input {
+          //   display: none;
+          // }
+        }
+        cursor: pointer;
+      }
+    }
+  }
+}
